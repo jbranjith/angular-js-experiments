@@ -5,6 +5,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { EventBindingModule } from './binding-event/event-binding.module';
+import { Property} from './binding-property/property-binding.module';
 
 platformBrowserDynamic().bootstrapModule(EventBindingModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
