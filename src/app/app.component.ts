@@ -10,8 +10,8 @@ import {GreetingService} from '../greeting/greeting.service';
 export class AppComponent {
   constructor(private greetingService: GreetingService){}
 
-  firstname = 'Ranjith';
-  lastname = "Sekar";
-  age = "10";
-  greeting = this.greetingService.morning;  
+  aa = 'Ranjith';
+  bb = "Sekar";
+  cc = "10";
+  greetingMessage = this.greetingService.morning;  
 }
