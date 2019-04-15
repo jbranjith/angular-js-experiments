@@ -9,4 +9,4 @@ import { PropertyBindingComponent } from './property-binding.component';
   declarations: [PropertyBindingComponent],
   bootstrap: [PropertyBindingComponent],
 })
-export class EventBindingModule { }
+export class PropertyBindingModule { }

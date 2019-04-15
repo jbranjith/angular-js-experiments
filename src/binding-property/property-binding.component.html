@@ -1,2 +1,7 @@
-<property-binding bind-age='pAge' [lastname]="pLastName" firstname="{{ pFirstname }}" [aboutme]='pAboutMe'></property-binding>
-<br><br>
+<h4>Property Binding:</h4>
+<property-binding 
+  bind-age='age' 
+  [lastname]="firstname" 
+  firstname="{{ lastname }}" 
+  [aboutme]='aboutme'>
+</property-binding>
