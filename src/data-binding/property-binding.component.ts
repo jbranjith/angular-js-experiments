@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'property-binding',
-  template: `<h4>Person Details:</h4>
+  template: `<h4>Property Binding:</h4>
               First Name: {{ firstname }} <br>
               Last Name: {{ lastname }} <br>
               Age: <input type='text' [value]='age'> <br>
@@ -14,4 +14,5 @@ export class PropertyBindingComponent {
   @Input() lastname: string;
   @Input() age: number;
   @Input() aboutme: string;
+  hasCar: boolean;
 }
