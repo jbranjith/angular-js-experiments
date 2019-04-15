@@ -6,7 +6,9 @@ import { Component, Input } from '@angular/core';
               First Name: {{ firstname }} <br>
               Last Name: {{ lastname }} <br>
               Age: <input type='text' [value]='age'> <br>
-              About Me: <p [innerHtml]='aboutme'></p>`,
+              About Me: <p [innerHtml]='aboutme'></p>
+              <button bind-disabled='login' >Login</button> <br><br>
+              <button bind-disabled='reset' >Reset</button>`,
   styles: [`h1 { font-family: Lato; }`]
 })
 export class PropertyBindingComponent {
@@ -14,5 +16,6 @@ export class PropertyBindingComponent {
   @Input() lastname: string;
   @Input() age: number;
   @Input() aboutme: string;
-  hasCar: boolean;
+  login: boolean = false;
+  reset: boolean = true;
 }
