@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PersonComponent } from '../property-binding/person.component';
+import { PropertyBindingComponent } from '../data-binding/property-binding.component';
 import { GreetingComponent } from '../greeting/greeting.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, PersonComponent, GreetingComponent],  
+  declarations: [AppComponent, PropertyBindingComponent, GreetingComponent],  
   bootstrap: [AppComponent],
 })
 export class AppModule { }

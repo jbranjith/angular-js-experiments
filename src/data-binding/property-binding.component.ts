@@ -1,15 +1,15 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'person',
+  selector: 'property-binding',
   template: `<h4>Person Details:</h4>
-              First Name: {{ firstname }} <br> 
+              First Name: {{ firstname }} <br>
               Last Name: {{ lastname }} <br>
-              Age: {{ age }} <br>
+              Age: <input type='text' [value]='age'> <br>
               About Me: <p [innerHtml]='aboutme'></p>`,
   styles: [`h1 { font-family: Lato; }`]
 })
-export class PersonComponent {
+export class PropertyBindingComponent {
   @Input() firstname: string;
   @Input() lastname: string;
   @Input() age: number;
