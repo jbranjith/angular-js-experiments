@@ -8,7 +8,7 @@ import {EventBindingComponent} from '../data-binding/event-binding.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, PropertyBindingComponent],
+  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

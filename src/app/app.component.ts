@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
   providers: []
 })
-export class AppComponent {  
+export class AppComponent {
   pFirstname = 'Roger';
   pLastName = "Federer";
   pAge = "30";
-  pAboutMe = "I am a World class Tennis Player";  
+  pAboutMe = "I am a World class Tennis Player";
 }
