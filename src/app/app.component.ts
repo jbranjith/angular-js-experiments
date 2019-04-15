@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {GreetingService} from '../greeting/greeting.service';
+
+import { GreetingService } from '../greeting/greeting.service';
 
 @Component({
   selector: 'my-app',
@@ -8,10 +9,11 @@ import {GreetingService} from '../greeting/greeting.service';
   providers: [GreetingService]
 })
 export class AppComponent {
-  constructor(private greetingService: GreetingService){}
-
-  aa = 'Ranjith';
-  bb = "Sekar";
-  cc = "10";
-  greetingMessage = this.greetingService.morning;  
+  constructor(private greetingService: GreetingService) { }
+  pFirstname = 'Roger';
+  pLastName = "Federer";
+  pAge = "30";
+  pAboutMe = "I am a World class Tennis Player";
+  
+  greetingMessage = this.greetingService.morning;
 }
