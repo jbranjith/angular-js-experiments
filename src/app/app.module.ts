@@ -8,10 +8,11 @@ import { EventBindingComponent } from '../binding-event/event.component';
 import { TwoWayBindingComponent } from '../binding-two-way/two-way.component';
 import { RandomComponent } from '../providers/random.component';
 import { GreetingComponent } from '../providedin/greeting.component';
+import { CalcComponent } from '../providedin/calc.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent],
+  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent, CalcComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
