@@ -5,18 +5,18 @@ import { GreetingService } from '../providedin/greeting.service';
 
 @Component({
   selector: 'random',
-  template: 'Message: {{message}} <br> <p>{{randomService.random}}</p>',
+  template: '<p>{{randomService.random}}</p>',
   providers: [RandomService]
 })
 export class RandomComponent implements OnInit {
   message: any;
 
   constructor(
-    private randomService: RandomService,
-    private greetingService: GreetingService
+    private randomService: RandomService
+    
   ) { }
 
  ngOnInit() {
-    this.message = this.greetingService.morning();
+    
   }
 }
