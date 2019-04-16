@@ -9,7 +9,7 @@ import { PropertyBindingModule } from './binding-property/property.module';
 import { EventBindingModule } from './binding-event/event.module';
 import { TwoWayBindingModule } from './binding-two-way/two-way.module';
 
-platformBrowserDynamic().bootstrapModule(EventBindingModule).then(ref => {
+platformBrowserDynamic().bootstrapModule(PropertyBindingModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {
     window['ngRef'].destroy();
