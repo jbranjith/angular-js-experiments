@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: "event-binding",
-  templateUrl: "./event-binding.component.html",
+  templateUrl: "./event.component.html",
   providers:[]
 })
 export class EventBindingComponent implements OnInit {

@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PropertyBindingComponent } from '../binding-property/property-binding.component';
-import { EventBindingComponent } from '../binding-event/event-binding.component';
+import { PropertyBindingComponent } from '../binding-property/property.component';
+import { EventBindingComponent } from '../binding-event/event.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
