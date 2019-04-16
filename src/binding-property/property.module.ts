@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { PropertyBindingComponent } from './property.component';
 
+
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [PropertyBindingComponent],

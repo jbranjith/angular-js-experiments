@@ -8,8 +8,12 @@ export class GreetingService {
     return "Good Morning!!!";
   }
 
-  evening(evnt) {
-    return "Good Evening!!";
+  evening() {
+    return "Good Evening!!!";
+  }
+
+  night() {
+    return "Good Night!!!"
   }
 
 }

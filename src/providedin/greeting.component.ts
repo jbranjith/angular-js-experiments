@@ -4,7 +4,7 @@ import { GreetingService } from './greeting.service';
 
 @Component({
   selector: 'greeting',
-  template: '<p>{{message}}</p>',
+  template: '<h4>Provided In Example: </h4>Message: {{message}}',
   providers: []
 })
 export class GreetingComponent implements OnInit {
