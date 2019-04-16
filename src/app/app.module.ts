@@ -7,11 +7,11 @@ import { PropertyBindingComponent } from '../binding-property/property.component
 import { EventBindingComponent } from '../binding-event/event.component';
 import { TwoWayBindingComponent } from '../binding-two-way/two-way.component';
 import { RandomComponent } from '../providers/random.component';
-
+import { GreetingComponent } from '../providedin/greeting.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent],
+  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
