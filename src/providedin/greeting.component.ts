@@ -8,8 +8,11 @@ import { GreetingService } from './greeting.service';
   providers: []
 })
 export class GreetingComponent implements OnInit {
-  message: any;
-  constructor(private greetingService: GreetingService) { }
+  message: any;  
+
+  constructor(
+    private greetingService: GreetingService
+  ) { }
 
   ngOnInit() {
     this.message = this.greetingService.morning();

@@ -5,7 +5,7 @@ import { CalcService } from './calc.service';
 @Component({
   selector: 'calc',
   template: '<h4>Provided In[service] Example: </h4>Sum(3,3): {{sum}}',
-  providers: []
+  providers: [CalcService]
 })
 export class CalcComponent implements OnInit {
 
@@ -13,7 +13,7 @@ export class CalcComponent implements OnInit {
   constructor(private calcService: CalcService) { }
 
   ngOnInit() {
-    this.sum = this.calcService.add(3,3);
+    this.sum = this.calcService.add(3, 3);
   }
 
 }
