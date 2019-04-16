@@ -7,8 +7,5 @@ import { Component, OnInit } from '@angular/core';
   providers: []
 })
 export class AppComponent {
-  pFirstname = 'Roger';
-  pLastName = "Federer";
-  pAge = "30";
-  pAboutMe = "I am a World class Tennis Player";
+  message: string = "Welcome!!";
 }
