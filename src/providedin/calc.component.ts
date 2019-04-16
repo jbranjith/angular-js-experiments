@@ -8,8 +8,8 @@ import { CalcService } from './calc.service';
   providers: [CalcService]
 })
 export class CalcComponent implements OnInit {
-
   sum: number;
+
   constructor(private calcService: CalcService) { }
 
   ngOnInit() {
