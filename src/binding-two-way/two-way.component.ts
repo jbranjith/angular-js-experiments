@@ -5,4 +5,6 @@ import {Component} from '@angular/core';
   templateUrl: './two-way.component.html',
   styleUrls: ['./two-way.component.css']
 })
-export class TwoWayBindingComponent{}
+export class TwoWayBindingComponent{
+  componentMessage: string = "This is TwoWayBindingComponent";
+}
