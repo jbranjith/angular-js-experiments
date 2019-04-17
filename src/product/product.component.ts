@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Product } from './product';
 import { PRODUCTS } from './product.constants';
 
@@ -12,6 +13,11 @@ export class ProductComponent implements OnInit {
   title: string = "Welcome to Products App"
 
   products: Product[] = PRODUCTS;
+  selectedProduct: Product;
 
   ngOnInit() { }
+
+  onSelect(product: Product) {
+    this.selectedProduct = product;
+  }
 }

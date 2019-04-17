@@ -1,5 +1,13 @@
 {{title}}
 <h3>Product List</h3>
 <ul>
-  <li *ngFor="let product of products"></li>
+	<li *ngFor="let product of products" (click)="onSelect( )"></li>
 </ul>
+
+<h4> Product Chosen </h4>
+<div>Product ID: {{product.id}}</div>
+<div>
+	<label>Product Name:
+    <input [(ngModel)]="selectedProduct.name" placeholder="name"/>
+  </label>
+</div>
