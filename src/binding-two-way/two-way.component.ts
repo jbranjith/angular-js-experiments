@@ -7,4 +7,10 @@ import {Component} from '@angular/core';
 })
 export class TwoWayBindingComponent{
   componentMessage: string = "This is TwoWayBindingComponent";
+  name: string ="BindingExample";
+
+  clickMe(){
+    alert("clicked me??");
+  }
+
 }
