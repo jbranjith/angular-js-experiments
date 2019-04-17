@@ -1,11 +1,16 @@
 <h4>Two Way Binding</h4>
 <div>
-	Type your text here: <input type="text" [(ngModel)]="showOutput">
+	Enter NAME here: <input type="text" [(ngModel)]="showOutput">
+</div>
+<div>
+  Your NAME is: <p>{{showOutput}}</p>
 </div>
 <br>
 <div>
-  Your text is: <p>{{showOutput}}</p>
+	<label>Your ADDRESS is: <input [(ngModel)]="address" placeholder="address"></label>
+  <br>Your ADDRES is: {{address}}
 </div>
+
 <br>
 Component Messge is: {{componentMessage}}
 <br><br>
