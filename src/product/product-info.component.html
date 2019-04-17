@@ -1,9 +1,25 @@
 <div *ngIf="product">
-<h4> Product Chosen </h4>
-<div>Product ID: {{product.id}}</div>
-<div>
-	<label>Product Name:
+	<h4> Product Chosen </h4>
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>TYPE</th>
+			<th>PRICE</th>
+		</tr>
+		<tr>
+			<td>{{product.id}}</td>
+			<td>{{product.name}}</td>
+			<td>{{product.type}}</td>
+			<td>{{product.price}}</td>
+		</tr>
+	</table>
+  <br>
+	<div>
+		<label>Product Name:
     <input [(ngModel)]='product.name'/>
   </label>
-</div><!---->
+</div>
+<br>
+<div><button (click)="goBack()">GO BACK</button></div>
 </div>

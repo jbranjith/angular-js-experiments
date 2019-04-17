@@ -28,4 +28,8 @@ export class ProductInfoComponent implements OnInit {
     const id = +this.activatedRoute.snapshot.paramMap.get('id');
     this.product = this.productService.getProductById(id);
   }
+
+  goBack(): void {
+    this.location.back();
+  }
 }
