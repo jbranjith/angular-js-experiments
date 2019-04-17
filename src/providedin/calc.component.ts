@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CalcService } from './calc.service';
+import { Logger } from '../log/logger.service';
 
 @Component({
   selector: 'calc',
@@ -10,10 +11,14 @@ import { CalcService } from './calc.service';
 export class CalcComponent implements OnInit {
   sum: number;
 
-  constructor(private calcService: CalcService) { }
+  constructor(
+    private calcService: CalcService,
+    private log: Logger
+  ) { }
 
   ngOnInit() {
     this.sum = this.calcService.add(3, 3);
+    this.log.info('Sum Value is: ' + this.sum);
   }
 
 }
