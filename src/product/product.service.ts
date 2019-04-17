@@ -7,7 +7,7 @@ import { PRODUCTS } from './product.constants';
 @Injectable({ providedIn: 'root' })
 export class ProductService {
 
-  constructor(private http: HttpClient) { }
+  //constructor(private http: HttpClient) { }
 
   getAllProducts(): Product[] {
     return PRODUCTS;
