@@ -14,10 +14,9 @@ export class ProductDashboardComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-   //this.getProducts();
-   this.productService.getAllProducts().subscribe(
-     products => this.products = products.slice(1,3)
-   );
+    this.productService.getAllProducts().subscribe(
+      products => this.products = products.slice(1, 3)
+    );
   }
 
   /*getProducts(): void {
