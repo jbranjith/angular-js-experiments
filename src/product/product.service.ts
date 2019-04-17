@@ -7,9 +7,11 @@ import { PRODUCTS } from './product.constants';
 @Injectable({ providedIn: 'root' })
 export class ProductService {
 
-  //constructor(private http: HttpClient) { }
-
   getAllProducts(): Product[] {
     return PRODUCTS;
+  }
+
+  getProductById(id: number): Product {
+    return PRODUCTS.find(product => product.id === id);
   }
 }

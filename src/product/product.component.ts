@@ -9,19 +9,17 @@ import { ProductService } from './product.service'
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
-  title: string = "Welcome to Products App";
-
   products: Product[];
-  selectedProduct: Product;
-
+  
   constructor(private productService: ProductService) { }
+  
   ngOnInit() {
     this.products = this.productService.getAllProducts();
   }
 
+
+  /*selectedProduct: Product;
   onSelect(product: Product): void {
-    //console.log('selected prod: ' + product.id)
     this.selectedProduct = product;
-  }
+  }*/
 }
