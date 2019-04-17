@@ -9,10 +9,12 @@ import { TwoWayBindingComponent } from '../binding-two-way/two-way.component';
 import { RandomComponent } from '../providers/random.component';
 import { GreetingComponent } from '../providedin/greeting.component';
 import { CalcComponent } from '../providedin/calc.component';
+import { ProductComponent } from '../product/product.component';
+
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent, CalcComponent],
+  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent, CalcComponent, ProductComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
