@@ -13,8 +13,8 @@ import { GreetingComponent } from '../providedin/greeting.component';
 import { CalcComponent } from '../providedin/calc.component';
 
 import { ProductComponent } from '../product/product.component';
-import { ProductInfoComponent } from '../product-info/product-info.component';
-import { ProductDashboardComponent } from '../product-dashboard/product-dashboard.component';
+import { ProductInfoComponent } from '../product/product-info.component';
+import { ProductDashboardComponent } from '../product/product-dashboard.component';
 
 
 @NgModule({

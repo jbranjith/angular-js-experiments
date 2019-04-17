@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Product } from '../product/product';
-import { ProductService } from '../product/product.service'
+import { Product } from './product';
+import { ProductService } from './product.service'
 
 @Component({
   selector: 'product-dashboard',
@@ -14,11 +14,14 @@ export class ProductDashboardComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-   this.getProducts();
+   //this.getProducts();
+   this.productService.getAllProducts().subscribe(
+     products => this.products = products.slice(1,3)
+   );
   }
 
-  getProducts(): void {
+  /*getProducts(): void {
     this.productService.getAllProducts()
       .subscribe(products => this.products = products.slice(1, 3));
-  }
+  }*/
 }
