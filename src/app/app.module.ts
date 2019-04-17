@@ -10,6 +10,7 @@ import { RandomComponent } from '../providers/random.component';
 import { GreetingComponent } from '../providedin/greeting.component';
 import { CalcComponent } from '../providedin/calc.component';
 import { ProductComponent } from '../product/product.component';
+import { ProductInfoComponent } from '../product-detail/product-info.component';
 
 
 @NgModule({

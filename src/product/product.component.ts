@@ -10,14 +10,17 @@ import { PRODUCTS } from './product.constants';
 })
 export class ProductComponent implements OnInit {
 
-  title: string = "Welcome to Products App"
+  title: string = "Welcome to Products App";
 
   products: Product[] = PRODUCTS;
   selectedProduct: Product;
 
-  ngOnInit() { }
+  ngOnInit() {
 
-  onSelect(product: Product) {
+  }
+
+  onSelect(product: Product): void {
+    //console.log('selected prod: ' + product.id)
     this.selectedProduct = product;
   }
 }

@@ -1,0 +1,9 @@
+<div *ngIf="product">
+<h4> Product Chosen </h4>
+<div>Product ID: {{product.id}}</div>
+<div>
+	<label>Product Name:
+    <input [(ngModel)]='product.name'/>
+  </label>
+</div><!---->
+</div>
