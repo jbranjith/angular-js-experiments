@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../product/product';
-import { ProductService } from '../product/product.service'
+import { ProductSortService, ProductSearchCriteria } from './product-sort.service'
 
 @Component({
   selector: 'product-sort',
@@ -12,11 +12,14 @@ export class ProductSortComponent implements OnInit {
   products: Product[];
 
   constructor(
-    private productService: ProductService
+    private productSortService: ProductSortService
   ) { }
 
   ngOnInit() {
-    this.products = this.productService.getAllProducts();
+    this.getProducts({ sortColumn: 'id', sortDirection: 'asc' });
   }
 
+  getProducts(criteria: ProductSearchCriteria) {
+    this.products = this.productSortService.getProducts(criteria);
+  }
 }

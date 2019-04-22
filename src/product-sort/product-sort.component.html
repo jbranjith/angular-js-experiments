@@ -1,10 +1,9 @@
-<html>
-<table border="1">
+<table sortable-table (sorted)="onSorted($event)">
 	<tr>
-		<th>ID</th>
-		<th>NAME</th>
-		<th>TYPE</th>
-		<th>PRICE</th>
+		<th sortable-column="id" sort-direction="asc">ID</th>
+		<th sortable-column="name">NAME</th>
+		<th sortable-column="type">TYPE</th>
+		<th sortable-column="price">PRICE</th>
 	</tr>
 	<tr *ngFor="let product of products">
 		<td>{{product.id}}</td>
@@ -13,5 +12,3 @@
 		<td>{{product.price}}</td>
 	</tr>
 </table>
-
-</html>
