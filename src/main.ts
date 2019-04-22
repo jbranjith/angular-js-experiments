@@ -8,8 +8,9 @@ import { AppModule } from './app/app.module';
 import { PropertyBindingModule } from './binding-property/property.module';
 import { EventBindingModule } from './binding-event/event.module';
 import { TwoWayBindingModule } from './binding-two-way/two-way.module';
+import { ProductSortModule } from './product-sort/product-sort.module';
 
-platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
+platformBrowserDynamic().bootstrapModule(ProductSortModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {
     window['ngRef'].destroy();
