@@ -13,13 +13,13 @@ import { GreetingComponent } from '../providedin/greeting.component';
 import { CalcComponent } from '../providedin/calc.component';
 
 import { ProductComponent } from '../product/product.component';
-import { ProductInfoComponent } from '../product/info/product-info.component';
+//import { ProductInfoComponent } from '../product/info/product-info.component';
+import { ProductInfoModule } from '../product/info/product-info.module';
 import { ProductDashboardComponent } from '../product/dashboard/product-dashboard.component';
 
-
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent, CalcComponent, ProductComponent, ProductInfoComponent, ProductDashboardComponent],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, ProductInfoModule],
+  declarations: [AppComponent, PropertyBindingComponent, EventBindingComponent, TwoWayBindingComponent, RandomComponent, GreetingComponent, CalcComponent, ProductComponent, ProductDashboardComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
