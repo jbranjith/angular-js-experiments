@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Product } from './product';
-import { ProductService } from './product.service'
+import { Product } from '../product';
+import { ProductService } from '../product.service'
 
 @Component({
   selector: 'product-dashboard',
